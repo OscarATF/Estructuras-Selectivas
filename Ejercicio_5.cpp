@@ -7,6 +7,10 @@ int main()
 		cout<<"Programa para calcular el numero de pulsaciones que debe tener una persona por cada 10 segundos de ejercicio aerobico."<<endl;
 		cout<<"Introduzca su edad:"<<endl;
 		cin>>edad;
+		while (edad<=0) {
+			cout<<"Introduzca una edad valida"<<endl;
+			cin>>edad;
+		}
 		cout<<"Escriba\n(H) si es hombre\n(M) si es mujer)"<<endl;
 		cin>>sexo;
 		switch (sexo){
