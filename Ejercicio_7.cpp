@@ -7,6 +7,10 @@ int main()
 	cout<<"Programa para obtener la cantidad de dinero que una persona tiene que pagar por cada una de las llantas que compra y la que tiene que pagar por el total de la compra."<<endl;
 	cout<<"*Ingrese la cantidad de llantas que comprara:"<<endl;
 	cin>>numLl;
+	while (numLl<0) {
+		cout<<"Porfavor ingrese una cantidad valida"<<endl;
+		cin>>numLl;
+	}
 	if (numLl<5) {
 		precioU=300;
 	} else if (numLl<=10) {
