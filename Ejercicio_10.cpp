@@ -9,6 +9,11 @@ int main ()
 	cout<<"Programa para calcular si un año es bisiesto o no lo es"<<endl;
 	cout<<"*Introduzca el año:"<<endl;
 	cin>>a;
+	while (a<0)
+	{
+		cout<<"Porfavor ingrese un año valido"<<endl;
+		cin>>a;
+	}
 	if (a%4==0&&a%100!=0||a%400==0) {
 		cout<<"El año ingresado es bisiesto"<<endl;
 	} else {
