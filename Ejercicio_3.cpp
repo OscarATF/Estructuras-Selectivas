@@ -8,8 +8,18 @@ int main()
 	cout<<"Programa para calcular el total a pagar por la compra de camisas"<<endl;
 	cout<<"Ingrese la cantidad de camisas que comprara:"<<endl;
 	cin>>numC;
+	while (numC<0)
+	{
+		cout<<"Porfavor ingrese una cantidad de camisas validas"<<endl;
+		cin>>numC;
+	}
 	cout<<"Ingrese el precio de cada camisa:"<<endl;
 	cin>>precioC;
+	while (precioC<0)
+	{
+		cout<<"Porfavor ingrese un precio de camisa valido"<<endl;
+		cin>>precioC;
+	}
 		if (numC>=3) {
 			desc=numC*precioC*0.2;
 			precioF=numC*precioC-desc;
