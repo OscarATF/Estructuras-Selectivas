@@ -1,13 +1,15 @@
 #include <iostream>
 using namespace std;
-int main()
-{
-	int numC;
-	double desc,precioC,precioF;
+int numC;
+void cantidad_cam(){
 	cout<<"Si se compran tres o mas se aplica un descuento del 20% sobre el total de la compra y si son menos de tres un descuento del 10%"<<endl;
 	cout<<"Programa para calcular el total a pagar por la compra de camisas"<<endl;
 	cout<<"Ingrese la cantidad de camisas que comprara:"<<endl;
 	cin>>numC;
+}
+int main(){
+	double desc,precioC,precioF;
+	cantidad_cam();
 	while (numC<0)
 	{
 		cout<<"Porfavor ingrese una cantidad de camisas validas"<<endl;
